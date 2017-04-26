@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-minify/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-minify/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-minify/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-minify/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-minify/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-minify/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-minify/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-minify/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-minify/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-minify/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-minify/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-minify/build/coverage.html/index.html)
 
@@ -35,33 +35,15 @@
 ```json
 
 {
-    "name": "minify",
-    "version": "2.0.13",
-    "description": "Minifier of js, css, html and img",
-    "homepage": "http://coderaiser.github.io/minify",
-    "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
-    "keywords": [
-        "minify",
-        "minimize",
-        "js",
-        "css",
-        "img",
-        "html",
-        "base64"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/coderaiser/minify.git"
+    "author": {
+        "name": "coderaiser",
+        "url": "https://github.com/coderaiser"
     },
     "bin": {
         "minify": "bin/minify.js"
     },
-    "scripts": {
-        "test": "tape test/minify.js",
-        "jshint": "jshint lib test",
-        "jscs": "jscs --esnext lib test",
-        "jscs-fix": "jscs --fix lib test",
-        "lint": "npm run jshint && npm run jscs"
+    "bugs": {
+        "url": "https://github.com/coderaiser/minify/issues"
     },
     "dependencies": {
         "clean-css": "~3.4.1",
@@ -74,16 +56,52 @@
         "try-catch": "~1.0.0",
         "uglify-js": "^2.7.0"
     },
-    "main": "lib/minify",
-    "license": "MIT",
-    "engines": {
-        "node": ">= 0.8.0"
-    },
+    "description": "Minifier of js, css, html and img",
     "devDependencies": {
         "jscs": "^3.0.3",
         "jshint": "^2.8.0",
         "tape": "^4.2.2"
-    }
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "e4f75cb34e919ef1ccc60bf4f2aec0b9b7863ab9",
+        "tarball": "https://registry.npmjs.org/minify/-/minify-2.0.13.tgz"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "gitHead": "eeaa345e390ff0029c8da18ba6aee404a9b498eb",
+    "homepage": "http://coderaiser.github.io/minify",
+    "keywords": [
+        "minify",
+        "minimize",
+        "js",
+        "css",
+        "img",
+        "html",
+        "base64"
+    ],
+    "license": "MIT",
+    "main": "lib/minify",
+    "maintainers": [
+        {
+            "name": "coderaiser"
+        }
+    ],
+    "name": "minify",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/coderaiser/minify.git"
+    },
+    "scripts": {
+        "jscs": "jscs --esnext lib test",
+        "jscs-fix": "jscs --fix lib test",
+        "jshint": "jshint lib test",
+        "lint": "npm run jshint && npm run jscs",
+        "test": "tape test/minify.js"
+    },
+    "version": "2.0.13"
 }
 ```
 
